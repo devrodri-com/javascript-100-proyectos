@@ -322,3 +322,32 @@ button#copy-btn:hover {
 button#copy-btn:active {
   transform: translateY(1px);
 }
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 16px 10px;
+  }
+
+  main.container {
+    padding: 16px 14px;
+    gap: 16px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .preview-section,
+  .controls-section,
+  .output-section {
+    padding: 14px;
+  }
+
+  .preview-stage {
+    min-height: 200px;
+  }
+
+  textarea#output {
+    min-height: 160px;
+  }
+}
